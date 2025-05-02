@@ -18,10 +18,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Fedihosting-Foundation-Forks/go-lemmy"
 	"github.com/dustin/go-humanize"
 	"github.com/julienschmidt/httprouter"
 	"github.com/k3a/html2text"
-	"github.com/rystaf/go-lemmy"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 )
@@ -971,7 +971,7 @@ func SignUpOrLogin(w http.ResponseWriter, r *http.Request, ps httprouter.Params)
 			Username:       r.FormValue("username"),
 			Password:       r.FormValue("password"),
 			PasswordVerify: r.FormValue("passwordverify"),
-			ShowNSFW:       r.FormValue("nsfw") != "",
+			ShowNSFW:       lemmy.NewOptional(r.FormValue("nsfw") != ""),
 		}
 		if r.FormValue("email") != "" {
 			register.Email = lemmy.NewOptional(r.FormValue("email"))
@@ -1449,7 +1449,7 @@ func UserOp(w http.ResponseWriter, r *http.Request, ps httprouter.Params) {
 	case "read_post":
 		postid, _ := strconv.ParseInt(r.FormValue("postid"), 10, 64)
 		post := lemmy.MarkPostAsRead{
-			PostIDs: lemmy.NewOptional([]int64{postid}),
+			PostIDs: []int64{postid},
 			Read:    true,
 		}
 		if r.FormValue("submit") == "mark unread" {

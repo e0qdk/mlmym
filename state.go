@@ -18,7 +18,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/rystaf/go-lemmy"
+	"github.com/Fedihosting-Foundation-Forks/go-lemmy"
 )
 
 type Comment struct {
