@@ -27,7 +27,7 @@ import (
 )
 
 var pictrs = regexp.MustCompile(`\/pictrs\/image\/([a-z0-9\-]+)\.([a-z]+)$`)
-var imgur = regexp.MustCompile(`^https:\/\/(i\.)?imgur.com\/([a-zA-Z0-9]{5,})(\.[a-zA-Z0-9]+)?`)
+var imgur = regexp.MustCompile(`^https:\/\/(i\.)?imgur\.com\/([a-zA-Z0-9]{5,})(\.[a-zA-Z0-9]+)?`)
 
 var isImage = func(u string) bool {
 	p, err := url.Parse(u)
