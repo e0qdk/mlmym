@@ -24,14 +24,15 @@ docker run -it -e LEMMY_DOMAIN='lemmydomain.com' -p "8080:8080" ghcr.io/fedihost
 
 #### default user settings
 
-| environment variable | default |
-| -------------------- | ------- |
-| LISTING              | All     |
-| SORT                 | Hot     |
-| COMMENT_SORT         | Hot     |
-| DARK                 | false   |
-| HIDE_THUMBNAILS      | false   |
-| COLLAPSE_MEDIA       | false   |
-| LINKS_IN_NEW_WINDOW  | false   |
+| environment variable   | default |
+|------------------------| ------- |
+| LISTING                | All     |
+| SORT                   | Hot     |
+| COMMENT_SORT           | Hot     |
+| DARK                   | false   |
+| HIDE_THUMBNAILS        | false   |
+| COLLAPSE_MEDIA         | false   |
+| LINKS_IN_NEW_WINDOW    | false   |
+| COMMENTS_IN_NEW_WINDOW | false   |
 
 To override a default setting to true, set the environment variable to any value. To undo an override, leave the variable blank.
