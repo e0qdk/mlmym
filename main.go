@@ -8,6 +8,9 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"strconv"
+	"strings"
+	"time"
 
 	"github.com/julienschmidt/httprouter"
 	"github.com/yuin/goldmark"
@@ -67,7 +70,10 @@ func init() {
 		}
 	}
 	if data, err := os.ReadFile("VERSION"); err == nil {
-		version = string(data)
+		version = strings.TrimSpace(string(data))
+	} else {
+		// fallback to service startup time, mostly useful to break cache during development
+		version = "dev." + strconv.FormatInt(time.Now().Unix(), 10)
 	}
 }
 func RemoteAddr(r *http.Request) string {
