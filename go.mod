@@ -1,8 +1,6 @@
 module mlmym
 
-go 1.23.0
-
-toolchain go1.23.8
+go 1.23.8
 
 require (
 	github.com/Fedihosting-Foundation-Forks/go-lemmy v0.19.11
