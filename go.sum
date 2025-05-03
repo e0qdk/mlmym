@@ -1,5 +1,5 @@
-github.com/Fedihosting-Foundation-Forks/go-lemmy v0.19.1-0.20250502215845-fffd7c569387 h1:LW+Zv8T85+XVBTNiqC8t1jXHWt0GaovizJ2g/IbrFIo=
-github.com/Fedihosting-Foundation-Forks/go-lemmy v0.19.1-0.20250502215845-fffd7c569387/go.mod h1:X9k1gbML+MPapr7ab5HVlYnE31hBsJC2OD7FXug2uwM=
+github.com/Fedihosting-Foundation-Forks/go-lemmy v0.19.11 h1:CuUmz3HmJI9iwgUDsrbitD71lB5Ct73wz60Im/MmJvg=
+github.com/Fedihosting-Foundation-Forks/go-lemmy v0.19.11/go.mod h1:X9k1gbML+MPapr7ab5HVlYnE31hBsJC2OD7FXug2uwM=
 github.com/dustin/go-humanize v1.0.1 h1:GzkhY7T5VNhEkwH0PVJgjz+fX1rhBrR7pRT3mDkpeCY=
 github.com/dustin/go-humanize v1.0.1/go.mod h1:Mu1zIs6XwVuF/gI1OepvI0qD18qycQx+mFykh5fBlto=
 github.com/google/go-cmp v0.5.2/go.mod h1:v8dTdLbMG2kIc/vJvl+f65V22dbkXbowE6jgT/gNBxE=

@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.23.8
 
 require (
-	github.com/Fedihosting-Foundation-Forks/go-lemmy v0.19.1-0.20250502215845-fffd7c569387
+	github.com/Fedihosting-Foundation-Forks/go-lemmy v0.19.11
 	github.com/dustin/go-humanize v1.0.1
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/k3a/html2text v1.2.1
