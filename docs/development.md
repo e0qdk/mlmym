@@ -52,17 +52,4 @@ make reload  # Watch for template/asset changes (port 8009)
 
 ## Configuration
 
-### Single Instance Mode
-```bash
-LEMMY_DOMAIN=discuss.online ./mlmym --addr :8080
-```
-
-### User Defaults
-Environment variables: `LISTING`, `SORT`, `COMMENT_SORT`, `DARK`, `HIDE_THUMBNAILS`, `COLLAPSE_MEDIA`, `LINKS_IN_NEW_WINDOW`, `COMMENTS_IN_NEW_WINDOW`
-
-## Development Principles
-
-- **Maintainability**: Code should be easy to understand, modify, and extend
-- **Code Review Friendly**: Changes should be clear, well-documented, and reviewable
-- **Learning Oriented**: Structure should help new developers understand the codebase quickly
-- **Simple Architecture**: Prefer straightforward solutions over complex abstractions
+For configuration options including deployment modes, environment variables, and usage examples, see the [Configuration section in README.md](../README.md#️-configuration).

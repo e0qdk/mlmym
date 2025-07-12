@@ -47,17 +47,7 @@ docker run -it -p "8080:8080" ghcr.io/fedihosting-foundation-forks/mlmym:latest
 
 **Prerequisites:** Go 1.23.8 or later
 
-```bash
-# Build the binary
-make mlmym
-# or
-go build -v -o mlmym
-
-# Run the server
-./mlmym --addr :8080
-```
-
-For development setup and project structure, see [docs/development.md](docs/development.md).
+For build instructions and development setup, see [docs/development.md](docs/development.md).
 
 ## ⚙️ Configuration
 
@@ -89,7 +79,7 @@ docker run -it -e LEMMY_DOMAIN='lemmy.world' -p "8080:8080" ghcr.io/fedihosting-
 LEMMY_DOMAIN='lemmy.world' ./mlmym --addr :8080
 ```
 
-Perfect for running a dedicated frontend for your community's instance.
+This mode provides a dedicated frontend for a specific Lemmy instance.
 
 ### 🎨 Default User Settings
 
