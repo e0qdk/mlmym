@@ -57,17 +57,7 @@ go build -v -o mlmym
 ./mlmym --addr :8080
 ```
 
-**Development mode:**
-
-```bash
-# Run with file watching and hot reload
-go run . --addr 0.0.0.0:8008 -w
-
-# Or use make commands
-make dev     # Start development environment
-make serve   # Run server with file watching (port 8008)
-make reload  # Watch for template/asset changes (port 8009)
-```
+For development setup and project structure, see [docs/development.md](docs/development.md).
 
 ## ⚙️ Configuration
 
